@@ -6,9 +6,9 @@ import (
 )
 
 type Csvdata struct {
-	table   string
-	coloums []string
-	records [][]string
+	Table   string
+	Coloums []string
+	Records [][]string
 }
 
 func Parse(text []string, file string) Csvdata {
@@ -16,9 +16,9 @@ func Parse(text []string, file string) Csvdata {
 	c := Csvdata{}
 	header := parseHeader(text)
 	records := parseData(text)
-	c.coloums = header
-	c.records = records
-	c.table = parser.getTable(*file)
+	c.Coloums = header
+	c.Records = records
+	c.Table = getTable(file)
 	return c
 }
 
