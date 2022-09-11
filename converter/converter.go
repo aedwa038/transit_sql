@@ -30,8 +30,8 @@ var coloumMap = map[string]string{
 	"stop_code":           "INT",
 	"stop_name":           "VARCHAR (255) NOT NULL",
 	"stop_desc":           "VARCHAR (255)",
-	"stop_lat":            "DECIMAL(10,6)",
-	"stop_lon":            "DECIMAL(10,6)",
+	"stop_lat":            "DECIMAL(10,6) NOT NULL",
+	"stop_lon":            "DECIMAL(10,6) NOT NULL",
 	"zone_id":             "INT NOT NULL",
 	"service_id":          "INT NOT NULL",
 	"trip_headsign":       "VARCHAR (255) NOT NULL",
@@ -40,8 +40,8 @@ var coloumMap = map[string]string{
 	"shape_id":            "INT NOT NULL",
 	"date":                "INT NOT NULL",
 	"exception_type":      "INT NOT NULL",
-	"shape_pt_lat":        "DECIMAL(10,6)",
-	"shape_pt_lon":        "DECIMAL(10,6)",
+	"shape_pt_lat":        "DECIMAL(10,6) NOT NULL",
+	"shape_pt_lon":        "DECIMAL(10,6) NOT NULL",
 	"shape_pt_sequence":   "INT NOT NULL",
 }
 

@@ -29,8 +29,8 @@ route_color VARCHAR (255) NOT NULL
 CREATE TABLE public.shapes
 (
 shape_id INT NOT NULL,
-shape_pt_lat DECIMAL(10,6),
-shape_pt_lon DECIMAL(10,6),
+shape_pt_lat DECIMAL(10,6) NOT NULL,
+shape_pt_lon DECIMAL(10,6) NOT NULL,
 shape_pt_sequence INT NOT NULL,
 shape_dist_traveled real
 );
@@ -53,8 +53,8 @@ stop_id INT NOT NULL,
 stop_code INT,
 stop_name VARCHAR (255) NOT NULL,
 stop_desc VARCHAR (255),
-stop_lat DECIMAL(10,6),
-stop_lon DECIMAL(10,6),
+stop_lat DECIMAL(10,6) NOT NULL,
+stop_lon DECIMAL(10,6) NOT NULL,
 zone_id INT NOT NULL
 );
 
